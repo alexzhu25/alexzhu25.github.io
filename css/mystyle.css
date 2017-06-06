@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+}
+
+/* contains title and all content */
+main {
+	text-align: left;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+	margin-bottom: 0;
+	min-width: 500px;
+}
+
+/* img that expands when hovered over */
+img.centerGrow { 
+	transition: all .2s ease-in-out; 
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+img.centerGrow:hover { 
+	transform: scale(1.2); 
+}
+
+/* img that is revealed with scroll */
+img.imgReveal {
+	margin: 10px;
+}
+
+p.bold {
+	font-weight: bold;
+}
+
+p.center {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #89D6F3;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 99;
+} 
+
+li {
+	float: left;
+}
+
+li.left {
+	margin-left: 200px;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #6DABC2;
+	color: white;
+}
+
+/* text or title that divides the page with a color block */
+.scroll1 {
+	display: block;
+	font-size: 20px;
+	background-color: #D1E9F9;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+#scrollToTopButton {
+	background: url("../images/scrollToTopButton.png") no-repeat;
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	right: 50px;
+	bottom: 10px;
+	display: none;
+}
+
+/* main title that fades in */
+.title1 {
+	color: red;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
