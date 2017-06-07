@@ -5,8 +5,8 @@ body {
 /* contains title and all content */
 main {
 	text-align: left;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 300px;
+	margin-right: 300px;
 	margin-top: 50px;
 	margin-bottom: 0;
 	min-width: 500px;
@@ -23,6 +23,11 @@ img.centerGrow {
 
 img.centerGrow:hover { 
 	transform: scale(1.2); 
+}
+
+img.floatRight {
+	float: right; 
+	margin-left: 50px;
 }
 
 /* img that is revealed with scroll */
@@ -54,8 +59,9 @@ li {
 	float: left;
 }
 
+/* home link on navbar is aligned with site content */
 li.left {
-	margin-left: 200px;
+	margin-left: 300px;
 }
 
 li a {
@@ -85,7 +91,7 @@ li a:hover {
 	height: 100px;
 	width: 100px;
 	position: fixed;
-	right: 50px;
+	right: 100px;
 	bottom: 10px;
 	display: none;
 }
@@ -94,6 +100,7 @@ li a:hover {
 .title1 {
 	color: red;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3.125em;
 	font-weight: bold;
+	font-family: "Comic Sans MS";
 }
