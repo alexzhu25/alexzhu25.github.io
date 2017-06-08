@@ -1,10 +1,17 @@
-/* takes input year born and calculates age */
+/* takes input year born and calculates current age */
 function calcAge() {
 	var inputYear = $("#yearInput").val();
-	if (inputYear == "") {
+	//check if numbers were input
+	if (inputYear == "" || isNaN(inputYear)) {
+		$("#ageResult").text("Result: Please enter a number.");
 		return;
 	}
-	var age = 2017 - inputYear;
+	//check for whole number
+	else if ((inputYear % 1 != 0)) {
+		$("#ageResult").text("Result: Please enter a whole number.");
+		return;
+	}
+	var age = new Date().getFullYear() - inputYear;
 	$("#ageResult").text("Result: " + age + " years old");
 }
 
