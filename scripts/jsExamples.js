@@ -47,8 +47,12 @@ function animateImg() {
 /* if button is clicked, moves text around and changes size */
 function animateImg() {
 	var elem = $("#animatedImg");
-	elem.animate({left: "300px", fontSize: "3em"}, 1000);
-	elem.animate({left: "0px", fontSize: "1em"}, 1000);
+	elem.animate({left: "600px", fontSize: "3em"}, 1000);
+}
+
+function animateImgReturn() {
+	var elem = $("#animatedImg");
+	elem.animate({left: "300px", fontSize: "1em"}, 1000);
 }
 
 $(document).ready(function() {
@@ -56,5 +60,5 @@ $(document).ready(function() {
 		$(this).next().slideToggle("fast");
 	});
 	$("#ageButton").click(calcAge);
-	$("#animateButton").click(animateImg);
+	$("#animateButton").hover(animateImg, animateImgReturn);
 });

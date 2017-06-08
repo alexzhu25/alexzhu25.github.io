@@ -35,6 +35,14 @@ img.imgReveal {
 	margin: 10px;
 }
 
+img.rotate {
+	transition: all .5s ease-in-out;
+}
+
+img.rotate:hover {
+	transform: rotate(360deg);
+}
+
 p.bold {
 	font-weight: bold;
 }
@@ -106,7 +114,7 @@ li a:hover {
 }
 
 #animatedImg {
-	position: relative;
+	position: absolute;
 	border-style: solid;
 	border-color: #E5E5FF;
 	border-width: 2px;
