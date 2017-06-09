@@ -12,6 +12,10 @@ main {
 	min-width: 500px;
 }
 
+a.menuOption {
+	text-decoration: none;
+}
+
 /* img that expands when hovered over */
 img.centerGrow { 
 	transition: all .2s ease-in-out; 

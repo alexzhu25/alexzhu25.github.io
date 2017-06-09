@@ -101,6 +101,21 @@ function menuExpandKeepReturn() {
 	}, 500);
 }
 
+/* generate random numbers for lottery */
+function randomLottoGen() {
+	/* generate 5 random numbers between 1 and 69 */
+	var numbers = new Array();
+	for (i = 0; i < 5; i++) {
+		var rawNum = Math.random() * 68;
+		var num = Math.floor(rawNum) + 1;
+		numbers.push(num);
+	}
+	/* generate 1 powerball number between 1 and 26 */
+	var rawPowerNum = Math.random() * 25;
+	var powerNum = Math.floor(rawPowerNum) + 1;
+	$("#lottoResult").html("Numbers: " + numbers + "<br>Powerball: " + powerNum);
+}
+
 
 $(document).ready(function() {
 	$("#button1").click(function(){
@@ -110,4 +125,5 @@ $(document).ready(function() {
 	$("#animateButton").hover(animateImg, animateImgReturn);
 	$(".menuIcon").hover(menuExpand, menuExpandReturn);
 	$(".menuExpand").hover(menuExpandKeep, menuExpandKeepReturn);
+	$("#lottoButton").click(randomLottoGen);
 });
