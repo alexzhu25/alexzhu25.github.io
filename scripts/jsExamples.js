@@ -47,13 +47,41 @@ function animateImg() {
 /* if button is clicked, moves text around and changes size */
 function animateImg() {
 	var elem = $("#animatedImg");
-	elem.animate({left: "600px", fontSize: "3em"}, 1000);
+	elem.stop();
+	elem.animate({
+		left: "600px", 
+		fontSize: "3em"
+	});
 }
 
 function animateImgReturn() {
 	var elem = $("#animatedImg");
-	elem.animate({left: "300px", fontSize: "1em"}, 1000);
+	elem.stop();
+	elem.animate({
+		left: "300px", 
+		fontSize: "1em"
+	});
 }
+
+/* if menu icon is hovered over, will expand menu option */
+function menuExpand() {
+	var item = $(this).next(".menuExpand");
+	item.stop();
+	item.animate({
+		width: "500px",
+		opacity: "1"
+	}, 500);
+}
+
+function menuExpandReturn() {
+	var item = $(this).next(".menuExpand");
+	item.stop();
+	item.animate({
+		width: "0px",
+		opacity: "0"
+	}, 500);
+}
+
 
 $(document).ready(function() {
 	$("#button1").click(function(){
@@ -61,4 +89,5 @@ $(document).ready(function() {
 	});
 	$("#ageButton").click(calcAge);
 	$("#animateButton").hover(animateImg, animateImgReturn);
+	$(".menuIcon").hover(menuExpand, menuExpandReturn);
 });

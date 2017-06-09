@@ -43,6 +43,17 @@ img.rotate:hover {
 	transform: rotate(360deg);
 }
 
+/* menu icon that rotates and has link expand from it */
+img.menuIcon {
+	position: absolute;
+	transition: all .5s ease-in-out;
+	z-index: 98;
+}
+
+img.menuIcon:hover {
+	transform: rotate(360deg);
+}
+
 p.bold {
 	font-weight: bold;
 }
@@ -83,6 +94,26 @@ li a {
 li a:hover {
 	background-color: #6DABC2;
 	color: white;
+}
+
+/* menu item that is hidden and expands when the menu icon is hovered over */
+.menuExpand {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	opacity: 0;
+	height: 117px;
+	width: 0px;
+	background-color: #9FEFE7;
+	font-size: 100px;
+	text-align: center-left;
+	text-indent: 90px;
+	margin-left: 60px;	
+	/* uncomment if want border
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	*/
 }
 
 /* text or title that divides the page with a color block */
