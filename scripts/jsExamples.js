@@ -82,6 +82,25 @@ function menuExpandReturn() {
 	}, 500);
 }
 
+/* if menu option is hovered over, keep expanded */
+function menuExpandKeep() {
+	var item = $(this);
+	item.stop();
+	item.animate({
+		width: "500px",
+		opacity: "1"
+	}, 500);
+}
+
+function menuExpandKeepReturn() {
+	var item = $(this);
+	item.stop();
+	item.animate({
+		width: "0px",
+		opacity: "0"
+	}, 500);
+}
+
 
 $(document).ready(function() {
 	$("#button1").click(function(){
@@ -90,4 +109,5 @@ $(document).ready(function() {
 	$("#ageButton").click(calcAge);
 	$("#animateButton").hover(animateImg, animateImgReturn);
 	$(".menuIcon").hover(menuExpand, menuExpandReturn);
+	$(".menuExpand").hover(menuExpandKeep, menuExpandKeepReturn);
 });
