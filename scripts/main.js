@@ -31,7 +31,6 @@ function scrollToTop() {
 $(document).ready(function() {
 	$(".title1").hide();
 	$(".title1").fadeIn(1000); //fade in the main title
-	
 	//scroll reveal selected items
 	window.sr = ScrollReveal({ reset: true });
 	sr.reveal(".scroll1");

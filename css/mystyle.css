@@ -1,15 +1,17 @@
 body {
 	margin: 0;
+	background-color: #F2FAFB;
 }
 
 /* contains title and all content */
 main {
+	background-color: white;
 	text-align: left;
 	margin-left: 300px;
 	margin-right: 300px;
-	margin-top: 50px; /* need room for the navbar */
+	margin-top: 40px; /* need room for the navbar */
 	margin-bottom: 0;
-	min-width: 500px;
+	min-width: 600px;
 }
 
 a.menuOption {
@@ -58,6 +60,11 @@ img.menuIcon:hover {
 	transform: rotate(360deg);
 }
 
+p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 p.bold {
 	font-weight: bold;
 }
@@ -100,6 +107,13 @@ li a:hover {
 	color: white;
 }
 
+/* container for menu items, in case want to position menu */
+.menu {
+	display: block;
+	margin: auto;
+	min-width: 600px;
+}
+
 /* menu item that is hidden and expands when the menu icon is hovered over */
 .menuExpand {
 	position: relative;
@@ -114,11 +128,6 @@ li a:hover {
 	text-align: center-left;
 	text-indent: 90px;
 	margin-left: 60px;	
-	/* uncomment if want border
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	*/
 }
 
 /* text or title that divides the page with a color block */
@@ -160,7 +169,7 @@ li a:hover {
 /* flag that can be dragged around and snaps to inside of box*/
 #divDragFlag {
 	height: 300px;
-	width: 800px;
+	width: 600px;
 	border-style: solid;
 }
 
@@ -183,9 +192,9 @@ li a:hover {
 }
 
 .dropDivHover {
-	background-color: green;
+	background-color: #B1AC3F;
 }
 
 .dropDivDropped {
-	background-color: #D6F1F3;
+	background-color: green;
 }

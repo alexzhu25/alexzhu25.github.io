@@ -130,15 +130,15 @@ function dragAndDrop() {
 	$("#dropIcon").draggable();
 	$(".dropDiv").droppable({
 		//tolerance: 'touch',
-		activeClass: "dropDiv",
+		accept: "#dropIcon",
 		hoverClass: "dropDivHover",
         drop: function(event, ui) {
 			$(this).addClass("dropDivDropped");
-		}
-		/*out: function(event, ui) {
+		},
+		out: function(event, ui) {
 			$(this).removeClass("dropDivDropped");
 			$(this).addClass("dropDiv");
-		}*/
+		}
 	});
 }
 
