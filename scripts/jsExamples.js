@@ -116,6 +116,31 @@ function randomLottoGen() {
 	$("#lottoResult").html("Numbers: " + numbers + "<br>Powerball: " + powerNum);
 }
 
+/* make the flag draggable within a container, snaps to the box */
+function dragTheFlag() {
+	$("#dragFlag").draggable({
+		containment: $("#divDragFlag"),
+		opacity: 0.5,
+		snap: "#divDragFlag",
+	});
+}
+
+/* drag and drop an icon into a box, change box color */
+function dragAndDrop() {
+	$("#dropIcon").draggable();
+	$(".dropDiv").droppable({
+		//tolerance: 'touch',
+		activeClass: "dropDiv",
+		hoverClass: "dropDivHover",
+        drop: function(event, ui) {
+			$(this).addClass("dropDivDropped");
+		}
+		/*out: function(event, ui) {
+			$(this).removeClass("dropDivDropped");
+			$(this).addClass("dropDiv");
+		}*/
+	});
+}
 
 $(document).ready(function() {
 	$("#button1").click(function(){
@@ -126,4 +151,6 @@ $(document).ready(function() {
 	$(".menuIcon").hover(menuExpand, menuExpandReturn);
 	$(".menuExpand").hover(menuExpandKeep, menuExpandKeepReturn);
 	$("#lottoButton").click(randomLottoGen);
+	dragTheFlag();
+	dragAndDrop();
 });

@@ -156,3 +156,36 @@ li a:hover {
 	border-width: 2px;
 	border-radius: 10px;
 }
+
+/* flag that can be dragged around and snaps to inside of box*/
+#divDragFlag {
+	height: 300px;
+	width: 800px;
+	border-style: solid;
+}
+
+#dropIcon {
+	float: left;
+}
+
+/* box for draggable icon to be dropped in */
+#dropZone {
+	display: block;
+	margin: auto;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	line-height: 200px;
+}
+
+.dropDiv {
+	background-color: yellow;
+}
+
+.dropDivHover {
+	background-color: green;
+}
+
+.dropDivDropped {
+	background-color: #D6F1F3;
+}
