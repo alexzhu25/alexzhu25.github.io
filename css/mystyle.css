@@ -100,6 +100,7 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-family: "Georgia";
 }
 
 li a:hover {
@@ -118,12 +119,12 @@ li a:hover {
 /* menu item that is hidden and expands when the menu icon is hovered over */
 .menuExpand {
 	position: absolute;
-	/*display: block;*/
 	overflow: hidden;
 	opacity: 0;
 	height: 117px;
 	width: 0;
-	background-color: #9FEFE7;
+	/*background-color: #9FEFE7;*/ /* for solid background color */
+	background: linear-gradient(to right, #9FEFE7, #F2FFF9); /* might not work on all browsers */
 	font-size: 100px;
 	color: white;
 	text-align: center-left;
@@ -135,9 +136,10 @@ li a:hover {
 .scroll1 {
 	display: block;
 	font-size: 1.25em;
-	background-color: #D1E9F9;
 	padding: 14px 16px;
 	text-align: center;
+	/*background-color: #D1E9F9;*/
+	background: linear-gradient(to right, #9FEFE7, #F2FFF9);
 }
 
 /* main title that fades in */
@@ -193,7 +195,9 @@ li a:hover {
 }
 
 .dropDivHover {
-	background-color: #B1AC3F;
+	/*background-color: #B1AC3F;*/
+	background-color: #CCCC00;
+	
 }
 
 .dropDivDropped {

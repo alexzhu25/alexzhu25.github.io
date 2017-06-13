@@ -63,7 +63,7 @@ function animateImgReturn() {
 	});
 }
 
-/* if menu icon is hovered over, will expand menu option */
+/* if menu icon is hovered over, will expand menu option and make visible */
 function menuExpand() {
 	var item = $(this).next(".menuExpand");
 	item.stop();
