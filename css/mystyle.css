@@ -9,7 +9,7 @@ main {
 	text-align: left;
 	margin-left: 300px;
 	margin-right: 300px;
-	margin-top: 40px; /* need room for the navbar */
+	margin-top: 50px; /* need room for the navbar */
 	margin-bottom: 0;
 	min-width: 600px;
 }

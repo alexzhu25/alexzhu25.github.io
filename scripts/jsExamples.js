@@ -142,6 +142,16 @@ function dragAndDrop() {
 	});
 }
 
+/* create gets section titles and creates html string
+function getSectionTitles() {
+	var tocHtml = "";
+	$(".scroll1").each(function() {
+		tocHtml += ($(this).text() + "<br>");
+	});
+	$("#TOC").html(tocHtml); //need to add div with id="TOC" to html to use
+}
+*/
+
 $(document).ready(function() {
 	$("#button1").click(function(){
 		$(this).next().slideToggle("fast");
@@ -153,4 +163,5 @@ $(document).ready(function() {
 	$("#lottoButton").click(randomLottoGen);
 	dragTheFlag();
 	dragAndDrop();
+	getSectionTitles();
 });
