@@ -163,5 +163,4 @@ $(document).ready(function() {
 	$("#lottoButton").click(randomLottoGen);
 	dragTheFlag();
 	dragAndDrop();
-	getSectionTitles();
 });
