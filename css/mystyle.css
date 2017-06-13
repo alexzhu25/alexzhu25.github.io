@@ -108,20 +108,21 @@ li a:hover {
 }
 
 /* container for menu items, in case want to position menu */
+
 .menu {
 	display: block;
 	margin: auto;
-	min-width: 600px;
+	min-width: 700px;
 }
 
 /* menu item that is hidden and expands when the menu icon is hovered over */
 .menuExpand {
-	position: relative;
-	display: block;
+	position: absolute;
+	/*display: block;*/
 	overflow: hidden;
 	opacity: 0;
 	height: 117px;
-	width: 0px;
+	width: 0;
 	background-color: #9FEFE7;
 	font-size: 100px;
 	color: white;
