@@ -63,9 +63,9 @@ function animateImgReturn() {
 	});
 }
 
-/* if menu icon is hovered over, will expand menu option and make visible */
+/* if menu icon or option is hovered over, will expand menu option and make visible */
 function menuExpand() {
-	var item = $(this).next(".menuExpand");
+	var item = $(this).find(".menuExpand");
 	item.stop();
 	item.animate({
 		width: "500px",
@@ -74,26 +74,7 @@ function menuExpand() {
 }
 
 function menuExpandReturn() {
-	var item = $(this).next(".menuExpand");
-	item.stop();
-	item.animate({
-		width: "0px",
-		opacity: "0"
-	}, 500);
-}
-
-/* if menu option is hovered over, keep expanded */
-function menuExpandKeep() {
-	var item = $(this);
-	item.stop();
-	item.animate({
-		width: "500px",
-		opacity: "1"
-	}, 500);
-}
-
-function menuExpandKeepReturn() {
-	var item = $(this);
+	var item = $(this).find(".menuExpand");
 	item.stop();
 	item.animate({
 		width: "0px",
@@ -158,8 +139,7 @@ $(document).ready(function() {
 	});
 	$("#ageButton").click(calcAge);
 	$("#animateButton").hover(animateImg, animateImgReturn);
-	$(".menuIcon").hover(menuExpand, menuExpandReturn);
-	$(".menuExpand").hover(menuExpandKeep, menuExpandKeepReturn);
+	$(".menuOption").hover(menuExpand, menuExpandReturn);
 	$("#lottoButton").click(randomLottoGen);
 	dragTheFlag();
 	dragAndDrop();
