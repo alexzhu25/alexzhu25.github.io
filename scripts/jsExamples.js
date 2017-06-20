@@ -49,7 +49,7 @@ function animateImg() {
 	var elem = $("#animatedImg");
 	elem.stop();
 	elem.animate({
-		left: "600px", 
+		left: "630px", 
 		fontSize: "3em"
 	});
 }
@@ -58,7 +58,7 @@ function animateImgReturn() {
 	var elem = $("#animatedImg");
 	elem.stop();
 	elem.animate({
-		left: "300px", 
+		left: "330px", 
 		fontSize: "1em"
 	});
 }
@@ -126,7 +126,7 @@ function dragAndDrop() {
 /* create gets section titles and creates html string
 function getSectionTitles() {
 	var tocHtml = "";
-	$(".scroll1").each(function() {
+	$(".titleSection").each(function() {
 		tocHtml += ($(this).text() + "<br>");
 	});
 	$("#TOC").html(tocHtml); //need to add div with id="TOC" to html to use

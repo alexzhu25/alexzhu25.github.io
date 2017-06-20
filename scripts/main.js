@@ -33,7 +33,7 @@ $(document).ready(function() {
 	$(".title1").fadeIn(1000); //fade in the main title
 	//scroll reveal selected items
 	window.sr = ScrollReveal({ reset: true });
-	sr.reveal(".scroll1");
+	sr.reveal(".titleSection");
 	sr.reveal(".imgReveal");
 	hideNavBar();
 	scrollToTop();
