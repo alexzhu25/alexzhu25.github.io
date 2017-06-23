@@ -68,7 +68,7 @@ function menuExpand() {
 	var item = $(this).find(".menuExpand");
 	item.stop();
 	item.animate({
-		width: "460px",
+		width: "480px",
 		opacity: "1"
 	}, 500);
 }
