@@ -35,6 +35,6 @@ $(document).ready(function() {
 	window.sr = ScrollReveal({ reset: true });
 	sr.reveal(".titleSection");
 	sr.reveal(".imgReveal");
-	hideNavBar();
+	//hideNavBar(); //uncomment to have navbar disappear with page scroll
 	scrollToTop();
 });
